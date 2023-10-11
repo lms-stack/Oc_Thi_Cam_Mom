@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+  <script type='text/javascript'>
+    // Ngăn chặn việc hiển thị Developer Tools khi nhấn phím F12
+document.onkeydown = function (event) {
+  if (event.keyCode == 123) { // 123 là mã phím F12
+    return false;
+  }
+}
+document.addEventListener('keydown', function(event) {
+  if (event.ctrlKey && event.key === 'u') {
+    event.preventDefault();
+  }
+});
+    // Ngăn chặn hiển thị menu ngữ cảnh khi chuột phải được nhấp
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+
+// Ngăn chặn hành vi sao chép
+document.addEventListener('copy', function(event) {
+  event.preventDefault();
+});
+</script>
+  <meta charSet="utf-8" />
+  <meta property="og:url" content="//NamPham.com" />
+  <meta name="description" content="Trang chủ của NamPham.Com - Welome to the website.">
+  <meta name="author" content="NamPham">
+  <meta name="keywords" content="NamPham. Com, NamPham. com, NamPham.com, NamPham">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="https://i.imgur.com/LC5mbkf.jpg" type="image/x-icon">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Welcome NamPham &mdash; Donate đê! " />
+  <link rel="icon" href="_static/img/logo.jpg" type="image/x-icon">
+  <meta name="next-head-count" content="13" />
+  <title>NamPham &mdash; Thông Tin Thanh Toán</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+  <link rel="stylesheet" href="_static/css/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="_static/css/mother.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body onload="__NamPhamDev()">
+  <div id="__next">
+    <main class="HeadLayout_layout__">
+      <div class="container-fluid">
+        <div class="_plateContainer__">
+          <div style="box-shadow: -1px 0px 15px -6px rgb(99, 111, 219);"
+            class="_infoContainer__ widget-content ___bodystyle">
+            <img class="PhamNam_Avatar" src="_static/img/logo.jpg" />
+            <h2 class="PhamNam_Name">Phạm Bảo Nam&ensp;<img height="17" width="17"
+                src="_static/img/vietnam-number-one.gif" /></h2>
+            <h4 class="TieuSu__">Nam Phạm Dev.Com &ensp;<img style="vertical-align: middle;" height="17" width="17"
+                src="_static/img/vuong-mien.webp" /></h4>
+            <div class="buttons___">
+              <div class="row-PhamNam">
+                <button
+                  onclick="alert('@Follow Facebook Me Pls ?!');setTimeout(function(){window.open('//www.facebook.com/profile.php?id=100083125762418');}, 123);"
+                  class="facebook">
+                  <span>
+                    <p style="margin-top: 10px;"><i class="fab fa-facebook"></i></p>
+                  </span>
+                  Facebook</button>
+              </div>
+              <div class="row-PhamNam">
+                <button
+                  onclick="alert('Chúng ta cùng biến về nhà nhé!');setTimeout(function(){window.open('//shopcodenampham--namphamvs.repl.co/');}, 123);"
+                  class="youtube">
+                  <span>
+                    <p style="margin-top: 10px;"><i class="fa-solid fa-house"></i></p>
+                  </span>
+                  Home</button>
+              </div>
+            </div>
+            <div class="Hr_tdtv"></div>
+            <div class="Descriptions____">
+              <span class="DetailText__">
+                <b style="font-size: 17px;color: rgb(201, 201, 201);" class="DetailText__">&mdash; Information Payment
+                  &mdash;</b>
+              </span>
+            </div>
+            <div class="grid w-full cardsContainer__">
+              <div class="col col-12 col-md-6 ">
+                <div class="infoCard__ ___bodystylecard">
+                  <img style="margin-top: 8px;" height="60" width="60"
+                    src="data:image/png;base64,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" />
+                  <u class="STK__">&ensp;BIDV&ensp;</u>
+                  <span onclick="copyText('8800016009');stk(8800016009);"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: 8800016009 <img height="17"
+                      width="17" src="_static/img/trai-tim.gif" /></span>
+                  <span onclick="copyText('PHAM BAO NAM');chutaikhoan(8800016009);"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: PHAM BAO NAM <img
+                      height="17" width="17" src="_static/img/trai-tim.gif" /></span>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6">
+                <div class="infoCard__ ___bodystylecard">
+                  <img style="margin-top: 18px;" height="42" width="42"
+                    src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png" />
+                  <u style="margin-top: 5px;" class="STK__">&ensp;Momo Payment&ensp;</u>
+                  <span onclick="copyText('Not available');stk('Not available');"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: Not available <img
+                      height="15" width="15" src="_static/img/trai-tim.gif" /></span>
+                  <span onclick="copyText('PHAM BAO NAM');chutaikhoan();"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: PHAM BAO NAM <img
+                      height="17" width="17" src="_static/img/trai-tim.gif" /></span>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6">
+                <div class="infoCard__ ___bodystylecard">
+                  <img style="margin-top: 4px" height="60" width="137" src="_static/img/logo-mbbank.png" />
+                  <u style="margin-top: -5px;" class="STK__">&ensp;Mb Bank&ensp;</u>
+                  <span onclick="copyText('Not available');stk();"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: Not available <img
+                      height="17" width="17" src="_static/img/trai-tim.gif" /></span>
+                  <span onclick="copyText('DO HOAI KHUONG');chutaikhoan();"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: PHAM BAO NAM <img
+                      height="17" width="17" src="_static/img/trai-tim.gif" /></span>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6">
+                <div class="infoCard__ ___bodystylecard">
+                  <img style="margin-top: 10px;" height="40" width="150" src="_static/img/logo-card5s.png" />
+                  <u style="margin-top: 5px;" class="STK__">&ensp;Card5s.Vn&ensp;</u>
+                  <span onclick="copyText('Not available');stk();"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Số Tài Khoản: Not available <img
+                      height="17" width="17" src="_static/img/trai-tim.gif" /></span>
+                  <span onclick="copyText('DO HOAI KHUONG');chutaikhoan();"
+                    style="font-size: 13px;margin-left: 27px;margin-top: 8px;">Chủ Tài Khoản: PHAM BAO NAM<img
+                      height="17" width="17" src="_static/img/trai-tim.gif" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="__Footer__">
+          <span class="Footer__">
+            All rights reserved<span class="startFreeText__">&mdash; NamPhamDev.Com</span>
+          </span>
+        </div>
+      </div>
+    </main>
+  </div>
+  <hr class="New">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script src="https://thanh-toan--namphamvs.repl.co/js/particles.js"></script>
+  <script src="https://thanh-toan--namphamvs.repl.co/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://thanh-toan--namphamvs.repl.co/js/index.js"></script>
+  <script src="https://alwingulla.com/88/tag.min.js" data-zone="495" async data-cfasync="false"></script>
+  <script src="https://alwingulla.com/88/tag.min.js" data-zone="496" async data-cfasync="false"></script>
+  <style>
+    html,
+    body {
+      cursor: url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;
+    }
+
+    a:hover {
+      cursor: url("https://1.bp.blogspot.com/-nYv2dLl3oXY/YL9utYBCh8I/AAAAAAAAFtA/wII4lVw5w4k-4isGMY41heTqk8U4TJujgCLcBGAsYHQ/s0/mouse-f2.png"), auto;
+    }
+  </style>
+  <script src="musicnamdev.js" data-n-g='{"made": "PhamNam"}'></script>
+  <script>
+    function copyText(textToCopy) {
+      var CopyTextarea = document.createElement("textarea");
+      CopyTextarea.textContent = textToCopy;
+      document.body.appendChild(CopyTextarea);
+      CopyTextarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(CopyTextarea);
+    }
+    function chutaikhoan() {
+      Toastify({
+        text: "Đã copy chủ tài khoản vào bộ nhớ tạm",
+        duration: 4200,
+        backgroundColor: "green"
+      }).showToast();
+      return;
+    }
+    function stk() {
+      Toastify({
+        text: "Đã copy số tài khoản vào bộ nhớ tạm",
+        duration: 4200,
+        backgroundColor: "green"
+      }).showToast();
+      return;
+    }
+    function __NamPhamDev() {NamPhamnoti();}
+    function NamPhamnoti() {
+      swal({
+        content: {
+          element: "div",
+          attributes: {
+            innerHTML: `
+          <h2 class="text-danger">Bạn Muốn Donate cho Minh Dev ?</h2>
+          
+        `,
+          },
+        },
+        buttons: {
+          confirm: {
+            text: "Dạ Đạika",
+            className: "swal-button swal-button--confirm",
+          },
+        },
+      });
+    }
+  </script>
+
+</body>
+<script src="theme-custom.js"></script>
+
+</html>
